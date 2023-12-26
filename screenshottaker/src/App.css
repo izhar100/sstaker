@@ -1,0 +1,39 @@
+.screenshot-display{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 50px;
+}
+
+.screenshot-display>div{
+  text-align: center;
+}
+
+.screenshot-display>div>div{
+  border: 1px solid rgb(200, 200, 200);
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.screenshot-display>div>div>img{
+  border-radius: 4px;
+}
+
+.screenshot-display>div>button{
+  padding:5px;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  border: none;
+
+}
+
+@media only screen and (max-width: 767px) {
+  .screenshot-display{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 50px;
+  }
+}
+
+
